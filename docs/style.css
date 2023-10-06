@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.p {
+p {
   text-align: justify;
   margin-left: 5%;
   margin-right: 5%;
@@ -35,11 +35,11 @@ li a:hover {
   color: white;
 }
 
-.p a {
+p a {
   text-decoration: none;
   color: darkslategrey;
 }
 
-.p a:hover {
+p a:hover {
   color: black;
 }
