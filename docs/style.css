@@ -18,12 +18,12 @@ p {
   margin-right: 5%;
 }
 
-topnav {
+.topnav {
   overflow: hidden;
   background-color: #333;
 }
 
-topnav a {
+.topnav a {
   float: left;
   display: block;
   color: white;
@@ -33,7 +33,7 @@ topnav a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-topnav a:hover {
+.topnav a:hover {
   background-color: black;
   color: white;
 }
