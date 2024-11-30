@@ -10,6 +10,30 @@
         padding: 2px;
         font-size: 100%;
     }
+
+      .column {
+        float: left;
+        width: 50%;
+    }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+      .column {
+        float: left;
+    }
+
+      .left {
+        width: 2\75%;
+    }
+
+      .right {
+        width: 25%;
+        background-color: #f4f4f4;
+    }
     </style>
     
   </head>
@@ -39,6 +63,8 @@
   </li>
 </ol>
 
+<div class="row">
+<div class="column left">    
 <center><h3>1. A Brief Introduction to Python</h3></center>
 
     <p>Python is an open-source programming language, with multiple ways to use it. Python is an <i>autocompiler</i> meaning all you need to do is run it, without any extra steps that other languages (such as C or C++) require. Any Python libraries (such as <i>math</i>, <i>numpy</i>, or <i>scipy</i>) are similarly free and open source, helping to make Python an excellent choice for a variety of fields and disciplines, including chemistry.</p>
@@ -57,6 +83,9 @@
     </center>
       
     <p>Now that we  see what the code looks like, let's break down each part. First, we have <code>print</code>. This is a function. <b>Any function looks of the form <code>[name](parameter)</code>, where in this case the name of the function is <code>print</code> and its <i>parameter</i> (this can also be thought of as a variable, which will become more obvious later on) is <code>"Hello World"</code> </b>. For this function, we are telling Python to print (again, this is the function) the parameter ("Hello World"). And, just as in any writing, quotes indicate what we want to say (in this case, print).</p>
-    
+
+</div>
+</div>
+
   </body>
 </html>
