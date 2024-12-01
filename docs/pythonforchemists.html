@@ -85,11 +85,53 @@
   <center>
     <img src="images/Hello_World.png" alt="Jupyter Notebook 'Hello World'">
   </center>
-  
+  <p><b><i>Congratulations!</i></b> You have written your first successful Python program.</p>
+
+<center><h4>1.2 Using Python for Arithmetic</h4></center>
+
+  <p>Python, especially in scientific fields, is commonly used for calculations. To form a strong foundation of scientific analysis using Python, it is best to start with "grade school" examples and slowly increase our knowledge to more complex topic areas. For example, say you want to compute the addition of two numbers. Python handles this in a way that will feel natural to the users. From something simple like <code>1+1</code> to exponentially larger numbers such as <code>1589978603+3749562</code>, Python can handle it. There are a few operators that Python recognizes:</p>
+
+  <center><code>+</code></center> Addition
+  <br>
+  <center><code>-</code></center> Subtraction
+  <br>
+  <center><code>*</code></center> Multiplication
+  <br>
+  <center><code>/</code></center> Division
+  <br>
+  <center><code>**</code></center> Exponents
+
+  <p>Python is also capable of handling both <i>integers</i> (whole numbers) and <i>floats</i> (numbers with decimal values). Python can also interpret <i>complex numbers</i> (usually denoted as "i" or <code>j</code> in Python). Complex numbers will become a larger focus for various topics in quantum mechanics and will be addressed later.</p>
+
+  <p>Python also has some more "advanced" operations:</p>
+
+  <center><code>//</code></center> Integer division
+  <br>
+  <center><code>%</code></center> Remainder
+
+  <p>Here, <i>integer division</i> refers to a whole number division, meaning the answer will be rounded down to a whole number. The <i>remainder</i> will provide the remainder of a division operation. Python also follows standard <i>order of operations</i> rules, including exponents and parentheses. It is a good habit to include parentheses when there is more than one operation for clarity purposes. This usually helps to ensure you and your code have a clear understanding of what is occurring. Oftentimes, you may get an error due to a forgotten parenthesis (such as if you tried to run <code>print("Hello World"</code> or <code>2 * (1 + 3</code>). Your error may look like this:</p>
+
+  <center><img src="images/EOF.png" alt="Closing parenthesis error for 2 * (1 + 3"></center>
+
+  <p>Here, <i>EOF</i> stands for <i>end of file</i>, meaning the code finished reading, but was missing a closing parenthesis. If you are using Jupyter Notebook or an IDE, the right-side parenthesis or other closing syntax is applied automatically. Both Jupyter Notebook and most IDEs have <i>syntax highlighting</i> as well, meaning if you put your cursor on the right-hand side of a character such as a parenthesis, its pair will highlight automatically. If no pair exists, the character will usually be highlighted in red:</p>
+
+  <center><img src="images/EOF_highlighted.png" alt="Open parenthesis highlighted in red"></center>
+            
 </div>
 
 <div class="column right">
   <center><h3>Terms to Know</h3></center>
+  <p>
+  <i>functions.</i> <code>[name](parameter)</code>
+  <br>
+  <b>note:</b> Press <code>shift+enter</code> on your keyboard to run a cell in Jupyter Notebook.
+  <br>
+  <b>note:</b> Python uses the <code>**</code> syntax for exponents. If the <code>^</code> symbol is used, you will get an error!
+  <br>
+  <b>note:</b> Python will automatically convert fractions to decimals. If you have the fraction <code>2/3</code> this value will be converted to <code>0.66666...7</code>
+  <br>
+  <b>note:</b> The current <i>cell</i> you are in in Jupyter Notebook has a green square around it.
+  </p>
 </div>
 </div>
 
