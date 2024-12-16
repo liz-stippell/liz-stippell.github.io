@@ -1,0 +1,273 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Elemental Sound Board</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  
+      <style>
+        .button {
+        background-color: green;
+        border: none;
+        color: black;
+        padding: 1% 2%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 75%;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        width: 4.5vw;
+        height: 4.5vw;
+        margin: 1%;
+        }
+
+        .button:hover {
+        background-color: darkred;
+        color: white;
+        }
+
+        .square {
+        background-color: transparent;
+        width: 4.5vw; /* Same width as .button */
+        height: 4.55vw; /* To make it a square */
+        margin: 1%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 1%; /* Adjust the gap between columns */
+            padding: 1%;
+            margin-bottom: 0;
+            align-items: end;
+        }
+
+        .column {
+            background-color: white;
+            text-align: center;
+            padding: 1%;
+            border-radius: 4px;
+        }
+      </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button1"><h1>H</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button3"><h1>Li</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button11"><h1>Na</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button19"><h1>K</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button37"><h1>Rb</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button55"><h1>Cs</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button87"><h1>Fr</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button4"><h1>Be</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button12"><h1>Mg</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button20"><h1>Ca</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button38"><h1>Sr</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button56"><h1>Ba</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button88"><h1>Ra</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button21"><h1>Sc</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button39"><h1>Y</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button22"><h1>Ti</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button40"><h1>Zr</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button72"><h1>Hf</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button104"><h1>Rf</h1></button>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button57"><h1>La</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button89"><h1>Ac</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button23"><h1>V</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button41"><h1>Nb</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button73"><h1>Ta</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button105"><h1>Db</h1></button>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button58"><h1>Ce</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button90"><h1>Th</h1></button>
+        </div>  
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button24"><h1>Cr</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button42"><h1>Mo</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button74"><h1>W</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button106"><h1>Sg</h1></button>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button59"><h1>Pr</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button91"><h1>Pa</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button25"><h1>Mn</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button43"><h1>Tc</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button75"><h1>Re</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button107"><h1>Bh</h1></button>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button60"><h1>Nd</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button92"><h1>U</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button26"><h1>Fe</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button44"><h1>Ru</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button76"><h1>Os</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button108"><h1>Hs</h1></button>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button61"><h1>Pm</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button93"><h1>Np</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button27"><h1>Co</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button45"><h1>Rh</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button77"><h1>Ir</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button62"><h1>Sm</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button94"><h1>Pu</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button28"><h1>Ni</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button46"><h1>Pd</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button78"><h1>Pt</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button63"><h1>Eu</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button95"><h1>Am</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button29"><h1>Cu</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button47"><h1>Ag</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button79"><h1>Au</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button64"><h1>Gd</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button96"><h1>Cm</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button30"><h1>Zn</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button48"><h1>Cd</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button80"><h1>Hg</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button65"><h1>Tb</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button97"><h1>Bk</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button5"><h1>B</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button13"><h1>Al</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button31"><h1>Ga</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button49"><h1>In</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button81"><h1>Tl</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button66"><h1>Dy</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button98"><h1>Cf</h1></button>
+        </div> 
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button6"><h1>C</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button14"><h1>Si</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button32"><h1>Ge</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button50"><h1>Sn</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button82"><h1>Pb</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button67"><h1>Ho</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button99"><h1>Es</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button7"><h1>N</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button15"><h1>P</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button33"><h1>As</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button51"><h1>Sb</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button83"><h1>Bi</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button68"><h1>Er</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button100"><h1>Fm</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button8"><h1>O</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button16"><h1>S</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button34"><h1>Se</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button52"><h1>Te</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button84"><h1>Po</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button69"><h1>Tm</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button101"><h1>Md</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button9"><h1>F</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button17"><h1>Cl</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button35"><h1>Br</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button53"><h1>I</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button85"><h1>At</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button70"><h1>Yb</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button102"><h1>No</h1></button>
+        </div>
+
+        <div class="column">
+    <button class="button" onclick="toggleAudio()" id="button2"><h1>He</h1></button>  
+    <button class="button" onclick="toggleAudio()" id="button10"><h1>Ne</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button18"><h1>Ar</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button36"><h1>Kr</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button54"><h1>Xe</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button86"><h1>Rn</h1></button>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <button class="button" onclick="toggleAudio()" id="button71"><h1>Lu</h1></button>
+    <button class="button" onclick="toggleAudio()" id="button103"><h1>Lr</h1></button>
+    
+</div>
+    <script src="buttons.js"></script>
+</body>
+
