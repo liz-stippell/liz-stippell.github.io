@@ -114,9 +114,21 @@
 
   <center><img src="images/EOF.png" alt="Closing parenthesis error for 2 * (1 + 3"></center>
 
-  <p>Here, <i>EOF</i> stands for <i>end of file</i>, meaning the code finished reading, but was missing a closing parenthesis. If you are using Jupyter Notebook or an IDE, the right-side parenthesis or other closing syntax is applied automatically. Both Jupyter Notebook and most IDEs have <i>syntax highlighting</i> as well, meaning if you put your cursor on the right-hand side of a character such as a parenthesis, its pair will highlight automatically. If no pair exists, the character will usually be highlighted in red:</p>
+  <p>Here, <i>EOF</i> stands for <i>end of file</i>, meaning the code finished reading, but was <i>missing a closing parenthesis</i>. If you are using Jupyter Notebook or an IDE, the right-side parenthesis or other closing syntax is applied automatically. Both Jupyter Notebook and most IDEs have <i>syntax highlighting</i> as well, meaning if you put your cursor on the right-hand side of a character such as a parenthesis, its pair will highlight automatically. If no pair exists, the character will usually be highlighted in red:</p>
 
   <center><img src="images/EOF_highlighted.png" alt="Open parenthesis highlighted in red"></center>
+
+  <p>To fix this error, all you have to do is add an extra parenthesis. In the example above, you see that we are not using the `print` function like we discussed earlier. In Jupyter Notebook, you do not need to call the print function <i>if and only if</i> you type just the expression of interest in a cell. For example, consider the following two examples:
+    <center>`2*(1+3)`</center>
+    <center>`x=2*(1+3)`</center>
+    Here, you can see that the first example is our expression of interest, while the second example is our expression of interest <i>assigned to a variable</i>. If we had just the first example in a cell and ran it in Jupyter Notebook, we would get an output printed. However, if we run just the second example in a cell, nothing will print. This is because we must call the new variable representing the expression. So, to get it to print, we can do it one of two ways:
+    <center>`x=2*(1+3)</center>
+    <center>`print(x)`</center>
+    <center>or</center>
+    <center>`print(2*(1+3))`</center>
+    Using either method, the result will be printed in the output.
+    </p>
+    <p>Now that we have the basics of arithmetic in Python under our belts, let's try out some examples.</p>
             
 </div>
 
