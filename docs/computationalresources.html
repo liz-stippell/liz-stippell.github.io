@@ -21,6 +21,33 @@
 
   <h2>General High Performance Computing</h2>
     <p>
+      <b>Sample Slurm Heading with Notes</b>
+      <br>
+      <code>
+        #!/bin/bash
+        <br>
+        #SBATCH --account=[project_id]
+        <br>
+        #SBATCH --partition=[partition_name]
+        <br>
+        #SBATCH --nodes=[number_of_nodes]
+        <br>
+        #SBATCH --ntasks-per-node=[tasks_per_node] # Optional, this will ensure the number of tasks is held constant amongst nodes
+        <br>
+        #SBATCH --ntasks=[ntasks-per-node * nodes]
+        <br>
+        #SBATCH --cpus-per-task=1 # Usually 1 is fine. By setting to 1, ntasks-per-node == number of CPUs of node and ntasks == number of CPUs if nodes = 1
+        <br>
+        #SBATCH --exclusive # Optional, will exclusively hold a node such that only your jobs are running on the node
+        <br>
+        #SBATCH --nodelist=[node_id] # Optional, allows user to specify which nodes to use
+        <br>
+        #SBATCH --mem=0 # 0 gives maximum amount of memory allowed by node
+        <br>
+        #SBATCH --time=1:00:00
+        <br>
+
+      </code>
     <a href="https://github.com/pegasus-isi/pegasus-usc-tutorial/tree/main" target="_blank">Pegasus WMS for USC</a>
       <br>
     <a href="https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/" target="_blank">Slurm commands</a>
