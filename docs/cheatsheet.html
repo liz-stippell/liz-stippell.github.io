@@ -62,6 +62,10 @@ tr:nth-child(even) {
     <td><code>sacct --starttime [YYYY]-[MM]-[DD]</code></td>
     <td>Slurm job history for your account for a specified day</td>
   </tr>
+    <tr>
+      <td><code>sinfo  -o "%60N %10P %8t %8D %10X %10Y %10m %25G %b " | grep [partition name]</code></td>
+      <td>Provides detailed description of partition: availability, number of sockets and CPUs, type of node, etc.</td>
+    </tr>
   </table>
     
   </center>
