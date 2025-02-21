@@ -23,7 +23,7 @@ p {
   background-color: #333;
 }
 
-.topnav a {
+.topnav a, .dropdown .dropbtn {
   float: left;
   display: block;
   color: white;
@@ -33,9 +33,40 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav a:hover {
+.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: black;
   color: white;
+}
+
+.dropdown {
+      float: left;
+      overflow: hidden;
+}
+
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+}
+
+.dropdown-content a {
+      float: none;
+      display: block;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      text-align: left;
+}
+
+.dropdown-content a:hover {
+      background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
 }
 
 h2 a {
