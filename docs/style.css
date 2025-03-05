@@ -111,10 +111,15 @@ a {
   padding: 0.5%;
 }
 
+.row {
+  display: flex;
+  justify-content: center; /* Centers columns horizontally */
+  gap: 1%; /* Optional: Adds space between columns */
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-  margin: auto;
 }
