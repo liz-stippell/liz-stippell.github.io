@@ -23,7 +23,7 @@ p {
   background-color: #333;
 }
 
-.topnav a, .dropdown .dropbtn {
+.topnav a {
   float: left;
   display: block;
   background-color: #333;
@@ -31,10 +31,19 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border: none;
-  outline: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
