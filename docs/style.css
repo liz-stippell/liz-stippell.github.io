@@ -106,9 +106,9 @@ a {
 }
 
 .column {
-  float: none;
+  float: left;
   width: 30%;
-  padding: 1%;
+  padding: 0.5%;
 }
 
 /* Clear floats after the columns */
