@@ -116,4 +116,5 @@ a {
   content: "";
   display: table;
   clear: both;
+  margin: auto;
 }
