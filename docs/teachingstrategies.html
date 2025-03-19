@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <Title>Research Resourches</Title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+   <div id="nav-placeholder"></div>
+
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('nav-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading navigation:', error));
+    </script>
+
+    <p>
+      <h2>Writing Competitive Proposals</h2>
+      <br>
+      <i>General information on writing effective proposals.</i>
+      <br>
+      <br>
+      <h2>Writing Effective Abstracts</h2>
+      <br>
+      <i>Information for abstract submissions for conferences and presentations.</i>
+      <br>
+      <a href="https://www.acs.org/content/dam/acsorg/events/slides/8-7-2014-abstracts-elliott-website-slides.pdf" target="_blank">How to write abstracts that capture your audience</a>
+      <br>
+      <a href="https://ugresearch.ucsd.edu/_files/conference-prep/Writing%20an%20Abstract%20for%20a%20Conference%20Presentation.pdf" target="_blank">How to write abstracts for conference presentations</a>
+      <br>
+      <a href="https://www.wcu.edu/WebFiles/PDFs/WritingConferencesrevision.pdf" target="_blank">How to write conference abstracts</a>
+      <br>
+      <h2>Training and Courses for Presenting</h2>
+      <br>
+      <a href="https://institute.acs.org/oral-session-presenter-training.html" target="_blank">ACS oral presentation training</a>
+      <br>
+      <a href="https://institute.acs.org/poster-session-presenter-training.html" target="_blank">ACS poster presentation training</a>
+    </p>
