@@ -8,7 +8,7 @@
         font-family: Consolas,"courier new";
         background-color: #f1f1f1;
         padding: 2px;
-        font-size: 100%;
+        /* font-size: 100%; */
     }
 
       .column {
@@ -136,23 +136,23 @@
   
   <p>Python, especially in scientific fields, is commonly used for calculations. To form a strong foundation of scientific analysis using Python, it is best to start with "grade school" examples and slowly increase our knowledge to more complex topic areas. For example, say you want to compute the addition of two numbers. Python handles this in a way that will feel natural to the users. From something simple like <code>1+1</code> to exponentially larger numbers such as <code>1589978603+3749562</code>, Python can handle it. There are a few operators that Python recognizes:</p>
 
-  <center><code>+</code> Addition </center>
+  <p><center><code>+</code> Addition </center></p>
   <br>
-  <center><code>-</code> Subtraction </center>
+  <p><center><code>-</code> Subtraction </center></p>
   <br>
-  <center><code>*</code> Multiplication </center>
+  <p><center><code>*</code> Multiplication </center></p>
   <br>
-  <center><code>/</code> Division </center>
+  <p><center><code>/</code> Division </center></p>
   <br>
-  <center><code>**</code> Exponents </center>
+  <p><center><code>**</code> Exponents </center></p>
 
   <p>Python is also capable of handling both <i>integers</i> (whole numbers) and <i>floats</i> (numbers with decimal values). Python can also interpret <i>complex numbers</i> (usually denoted as "i" or <code>j</code> in Python). Complex numbers will become a larger focus for various topics in quantum mechanics and will be addressed later.</p>
 
   <p>Python also has some more "advanced" operations:</p>
 
-  <center><code>//</code> Integer division </center>
+  <p><center><code>//</code> Integer division </center></p>
   <br>
-  <center><code>%</code> Remainder </center>
+  <p><center><code>%</code> Remainder </center></p>
 
   <p>Here, <i>integer division</i> refers to a whole number division, meaning the answer will be rounded down to a whole number. The <i>remainder</i> will provide the remainder of a division operation. Python also follows standard <i>order of operations</i> rules, including exponents and parentheses. It is a good habit to include parentheses when there is more than one operation for clarity purposes. This usually helps to ensure you and your code have a clear understanding of what is occurring. Oftentimes, you may get an error due to a forgotten parenthesis (such as if you tried to run <code>print("Hello World"</code> or <code>2 * (1 + 3</code>). Your error may look like this:</p>
 
@@ -163,13 +163,17 @@
   <center><img src="images/EOF_highlighted.png" alt="Open parenthesis highlighted in red"></center>
 
   <p>To fix this error, all you have to do is add an extra parenthesis. In the example above, you see that we are not using the `print` function like we discussed earlier. In Jupyter Notebook, you do not need to call the print function <i>if and only if</i> you type just the expression of interest in a cell. For example, consider the following two examples:</p>
-    <center><code>2*(1+3)`</code></center>
-    <center><code>x=2*(1+3)</code></center>
+    <p><center><code>2*(1+3)`</code></center></p>
+    <p><center><code>x=2*(1+3)</code></center></p>
     <p>Here, you can see that the first example is our expression of interest, while the second example is our expression of interest <i>assigned to a variable</i>. If we had just the first example in a cell and ran it in Jupyter Notebook, we would get an output printed. However, if we run just the second example in a cell, nothing will print. This is because we must call the new variable representing the expression. So, to get it to print, we can do it one of two ways:</p>
-    <center><code>x=2*(1+3)</code></center>
-    <center><code>print(x)</code></center>
-    <center>or</center>
-    <center><code>print(2*(1+3))</code></center>
+    <p><center><code>x=2*(1+3)</code></center></p>
+  <br>
+    <p><center><code>print(x)</code></center></p>
+  <br>
+    <p><center>or</center></p>
+  <br>
+    <p><center><code>print(2*(1+3))</code></center></p>
+  <br>
     <p>Using either method, the result will be printed in the output.</p>
     </p>
     <p>Now that we have the basics of arithmetic in Python under our belts, let's try out some examples.</p>
