@@ -118,11 +118,11 @@ p a:visited {
 }
 
 p ol, p ul {
-  text-align: inherit;
-  margin-left: inherit;
-  margin-right: inherit;
-  line-height: inherit;
-  font-size: inherit;
+  text-align: inherit !important;
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+  line-height: inherit !important;
+  font-size: inherit !important;
 }
 
 .column {
