@@ -117,6 +117,10 @@ p a:visited {
   color: darkred;
 }
 
+p ol {
+  all: inherit;
+}
+
 .column {
   float: left;
   width: 30%;
