@@ -117,8 +117,12 @@ p a:visited {
   color: darkred;
 }
 
-ol {
-  all: inherit;
+p ol, p ul {
+  text-align: inherit;
+  margin-left: inherit;
+  margin-right: inherit;
+  line-height: inherit;
+  font-size: inherit;
 }
 
 .column {
