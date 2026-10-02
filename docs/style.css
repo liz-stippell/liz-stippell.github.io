@@ -117,7 +117,7 @@ p a:visited {
   color: darkred;
 }
 
-p ol {
+ol {
   all: inherit;
 }
 
