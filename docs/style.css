@@ -13,7 +13,7 @@ h2 {
   margin-right: 5%;
 }
 
-p {
+p, ul, ol {
   text-align: justify;
   margin-left: 5%;
   margin-right: 5%;
@@ -115,14 +115,6 @@ p a {
 
 p a:visited {
   color: darkred;
-}
-
-p ol, p ul {
-  text-align: inherit !important;
-  margin-left: inherit !important;
-  margin-right: inherit !important;
-  line-height: inherit !important;
-  font-size: inherit !important;
 }
 
 .column {
